@@ -76,7 +76,7 @@ public:
         cout << "\nName of country: " << name << "\nCapital: " << capital << "\nPhone code: " << code << "\nPopulation: " << population << "\nArea: " << area << "\nGDP(billions): " << gdp << endl;
     }
 
-    void ñalculatePopulationDensity()
+    void calculatePopulationDensity()
     {
         int a = population;
         float b = area;
