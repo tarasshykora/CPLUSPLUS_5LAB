@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-enum governmentType
+enum GovernmentType
 {
     DEMOCRACY,
     REPUBLIC,
@@ -21,7 +21,7 @@ private:
     string capital;
     float area;
     int code;
-    governmentType Type;
+    GovernmentType type;
 
 public:
     float gdp;
@@ -41,34 +41,34 @@ public:
         this->gdp = gdp;
     }
 
-    string getName()
+    string get_name()
     {
         return name;
     }
 
-    string getCapital()
+    string get_capital()
     {
         return capital;
 
     }
 
-    int getCode()
+    int get_code()
     {
         return code;
     }
 
-    float getArea()
+    float get_area()
     {
         return area;
     }
 
-    governmentType getType()
+    GovernmentType get_type()
     {
-        return Type;
+        return type;
     }
 
-    void setType(governmentType Type) {
-        this->Type = Type;
+    void SetType(GovernmentType type) {
+        this->type = type;
     }
 
     void CountryInf()
@@ -76,7 +76,7 @@ public:
         cout << "\nName of country: " << name << "\nCapital: " << capital << "\nPhone code: " << code << "\nPopulation: " << population << "\nArea: " << area << "\nGDP(billions): " << gdp << endl;
     }
 
-    void ñalculatePopulationDensity()
+    void CalculatePopulationDensity()
     {
         int a = population;
         float b = area;
